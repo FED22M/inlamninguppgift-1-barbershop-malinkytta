@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&family=Poppins:wght@200&display=swap');
+
+@font-face {
+    font-family: 'TheForegenOutline';
+    src: url(TheForegenOutline.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    color: #fff;
+    font-family: Barlow Semi Condensed;
+    font-weight: 600;
+}
+
+p {
+    color: #fff;
+    font-family: Poppins;
+}
+
+.navbar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background: rgba(9, 6, 1, 0.5);
+    backdrop-filter: blur(8px);
+    color: white;
+    text-transform: uppercase;
+    z-index: 99;
+}
+
+/* .navbar-links {
+    display: flex;
+    flex-direction: column;
+} */
+
+.navbar-links ul {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: none;
+    list-style: none;
+}
+
+/* 
+.navbar-links li {
+    list-style: none;
+} */
+
+.navbar-links li a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 17px;
+    color: white;
+    display: block;
+}
+
+.navbar h1 {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.menu-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    visibility: visible;
+}
+
+.menu-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.banner {
+    /* width: 100vw; */
+    height: 100vh;
+    background: url(bg.jpg);
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    top: 40vh;
+    padding: 20px;
+}
+
+.banner-text h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(191 146 91);
+
+}
+
+.banner-text h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.banner-text span {
+    font-family: 'TheForegenOutline';
+    /* color: rgb(191 146 91); */
+}
+
+.banner-text button {
+    background: transparent;
+    border: 2px solid rgb(191 146 91);
+    text-transform: uppercase;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.banner-text a {
+    color: rgb(191 146 91);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(191 146 91);
+}
+
+.column {
+    padding: 20px;
+    text-align: center;
+}
+
+.column img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.column h2 {
+    text-transform: uppercase;
+}
+
+.column:nth-child(odd) {
+    background-color: rgb(183 134 73)
+}
+
+.about {
+    top: 200vh;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.about h2 {
+    color: rgb(183 134 73);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.about h3 {
+    color: rgb(9 6 1);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.about p {
+    color: rgb(9 6 1);
+}
+
+.about img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.about .box {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(183 134 73);
+    width: 250px;
+    height: 100px;
+}
+
+.box h2 {
+    color: white;
+    font-size: 15px;
+}
+
+.box h2 span {
+    font-size: 30px;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.fa-calendar {
+    color: white;
+}
+
+.testimonials {
+    background-color: rgb(235 232 222);
+    /* width: 100vw; */
+    /* height: 50vh; */
+    padding: 20px;
+}
+
+.testimonials h2,
+h3 {
+    /* padding: 20px; */
+
+    margin: 20px;
+}
+
+.testimonials h2 {
+    color: rgb(183 134 73);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.testimonials h3 {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.testimonials p {
+    color: #000;
+}
+
+.testimonials img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.col-1 {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    background-color: rgb(9 6 1);
+    padding: 20px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    /* text-decoration: none; */
+    /* margin: 5px 2px; */
+    border-radius: 50%
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter,
+.fa-facebook,
+.fa-instagram {
+    background: rgb(191 146 91);
+    color: #fff;
+
+}
+
+/* 
+.fa-facebook {
+    background: rgb(191 146 91);
+    color: #fff;
+}
+
+.fa-instagram {
+    background: rgb(191 146 91);
+    color: #fff;
+} */
+
+.fa-map,
+.fa-phone,
+.fa-paper-plane {
+    color: rgb(191 146 91);
+}
+
+.footer {
+    font-family: Poppins;
+}
+
+.footer h2 {
+    text-transform: uppercase;
+    padding: 20px 0 15px 0;
+}
+
+.footer ul {
+    color: #fff;
+    padding: 10px;
+}
+
+.footer li {
+    padding: 10px;
+}
+
+.footer ul li::marker {
+    content: ">";
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+/* ol {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    list-style: none;
+} */
+
+.title-footer {
+    display: none;
+}
+
+@media screen and (min-width:850px) {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+    }
+
+    .navbar-links ul {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    /* 
+    .navbar-links li {
+        list-style: none;
+    } */
+
+    .navbar-links li a {
+        font-weight: 400;
+        font-size: 0.8rem;
+        padding: 20px;
+        margin-right: 10px;
+        font-family: Barlow Semi Condensed;
+    }
+
+    .navbar ul li a:hover {
+        background-color: rgba(183 134 73);
+        color: rgb(9 6 1);
+    }
+
+    .menu-button {
+        visibility: hidden;
+    }
+
+    .title-footer {
+        display: contents;
+    }
+
+}
+
+/* kanske till senare */
+/* position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    top: 100vh;
+    background-color: rgb(174, 147, 55); */
